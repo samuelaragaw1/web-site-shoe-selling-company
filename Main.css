@@ -2,3 +2,25 @@
     padding: 0px;
     margin: 0px;
 }
+body {
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* navigation===========================================================*/
+nav {
+    position: fixed;
+    width: 80%;
+    height: 2rem;
+    border: 1px solid black;
+    top: 2rem;
+    left: 10%;
+    background-color: tomato;
+    transition: 0.3s;
+}
+nav.hidden {
+    transform: translateY(-200%);
+}
+nav.visible {
+    transform: translateY(0%);
+}
