@@ -14,6 +14,7 @@ body {
     font-family: 'sam', sans-serif;
     position: absolute;
     width: 100%;
+    height: 120rem;
     overflow-x: hidden;
 }
 /* navigation=======================================================*/
@@ -23,7 +24,7 @@ nav {
     height: 2.7rem;
     top: 2rem;
     left: 10%;
-    background-color: tomato;
+    background-color: white;
     transition: 0.3s;
     border-radius: 2rem;
 }
@@ -51,6 +52,9 @@ nav > a:first-child {
     width: 2rem;
     margin-left: 2%;
     margin-top: 0.5%;
+}
+nav > a:nth-child(2) {
+    color: tomato;
 }
 nav > a:nth-child(6) {
     margin-left: 35%;
@@ -104,4 +108,109 @@ nav > div::after {
     background-repeat: no-repeat;
     height: 1.5rem;
     width: 1.5rem;
+}
+nav > a:hover {
+    color: tomato;
+    transition: 0.3s;
+}
+nav > div > input:focus {
+    background-color: rgba(255, 99, 71, 0.438);
+}
+/*header =============================================================*/
+header {
+    position: absolute;
+    width: 100%;
+    height: 55rem;
+    background-image: url(images/two_young_women_sitting_together_outdoors_smiling_warmly_at_the_camera_they_are_wearing_stylish_sne_4hngmw33ipig0cfbkl8b_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+header > h2 {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    top: 36rem;
+    left: 4%;
+}
+header > p {
+    font-family: serif;
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    top: 41rem;
+    left: 4%;
+}
+header > a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    padding: 0.5% 5%;
+    top: 46rem;
+    left: 4%;
+    border-radius: 2rem;
+}
+header > a:hover {
+    background-color: yellow;
+    color: black;
+    transition: 0.3s;
+    border-color: black;
+}
+/*main =============================================================*/
+main {
+    position: absolute;
+    z-index: 1;
+    top: 55rem;
+    width: 100%;
+}
+/*bestsellers =======================================================*/
+#bestsellers {
+    position: absolute;
+    width: 100%;
+}
+#bestsellers > section > h2 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    width: 70%;
+    font-weight: 700;
+    margin-left: 4%;
+    margin-top:  1rem;
+    color: #272727;
+}
+#bestsellers > section > a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: tomato;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+/*newarrival ========================================================*/
+#newarrival {
+    position: absolute;
+    top: 60rem;
+}
+/*shop by catagori =================================================*/
+#shop_by_catagory {
+    position: absolute;
+    top: 120rem;
+}
+#our_story {
+    position: absolute;
+    top: 160rem;
+}
+#instagram {
+    position: absolute;
+    top: 180rem;
+}
+/*footer ============================================================*/
+footer {
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    top: 200rem;
 }
