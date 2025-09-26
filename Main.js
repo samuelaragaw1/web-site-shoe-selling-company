@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     function scrollFunction() {
         let header = document.querySelector('header');
+        let bestsellers = document.querySelector('#bestsellers');
         let scroll_Y = window.scrollY;
         console.log(scroll_Y)
 
@@ -41,8 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         /*Making header fixed*/
-        if (scroll_Y >= 800) {
-            header.style.top = scroll_Y - 800 + 'px';
+        if (scroll_Y >= 689) {
+            header.style.top = scroll_Y - 689 + 'px';
+            bestsellers.style.top = scroll_Y - 689 + 'px';
         }
         else {
             header.style.top = "0px";
