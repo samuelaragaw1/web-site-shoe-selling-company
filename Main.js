@@ -1,10 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    let slide = true;
     let scrolled = 0;
     let fav_click = 0;
     console.log("Document loaded");
     console.log(document.documentElement.scrollHeight);
     document.addEventListener('scroll', scrollFunction);
+    document.querySelector('#slide_container').addEventListener('click', control_slid)
     document.querySelector("#favorite").addEventListener('click', 
             function (e) {
                 e.preventDefault();
@@ -48,6 +50,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         else {
             header.style.top = "0px";
+        }
+    }
+    function control_slid() {
+        console.log("clicked")
+        if (slide === true) {
+            document.querySelector('#slider').style.animationPlayState = 'paused';
+            slide = false;
+        }
+        else {
+            document.querySelector('#slider').style.animationPlayState = 'running';
+            slide = true;
         }
     }
 });
