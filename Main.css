@@ -359,12 +359,119 @@ main {
 /*shop by catagori =================================================*/
 #shop_by_catagory {
     position: absolute;
-    top: 120rem;
+    top: 83rem;
+    z-index: 3;
+    padding-bottom: 5rem;
+    background-color: white;
+    width: 100%;
 }
+/* #shop_by_catagory > section:first-child {
+    border: 1px solid black;
+} */
+#shop_by_catagory > section:first-child > h2{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 3%;
+}
+#shop_by_catagory > section:first-child > a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 60%;
+    text-decoration: none;
+    color: black;
+    border: 2px solid  black;
+    padding: 0.5% 2%;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+#shop_by_catagory > section:first-child > a:hover {
+    background-color: yellow;
+    transition: 0.3s;
+}
+#shop_by_catagory > div > section {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3%;
+    margin-top: 2rem;
+    height: 35rem;
+    width: 28%;
+    background-color: rgb(231, 231, 231);
+    /* border:1px solid black; */
+    border-radius: 1rem;
+}
+#shop_by_catagory > div > section:nth-child(2) {
+    margin-left: 4%;
+}
+#shop_by_catagory > div > section:nth-child(3) {
+    margin-left: 4%;
+}
+#shop_by_catagory > div > section > img {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 384px;
+    border-radius: 0.7rem;
+}
+#shop_by_catagory > div > section > a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10%;
+    margin-left: 20%;
+    color: black;
+    border: 1px solid  black;
+    padding: 5% 20%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+#shop_by_catagory > div > section:hover {
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s;
+}
+#shop_by_catagory > div > section > a:hover {
+    background-color: yellow;
+    transition: 0.3s;
+}
+/*our_story =========================================================*/
 #our_story {
     position: absolute;
-    top: 160rem;
+    z-index: 3;
+    top: 127rem;
+    width: 100%;
+    background-color: white;
 }
+#our_story > div {
+    color: rgb(0, 56, 73);
+    display: inline-block;
+    width: 93%;
+    border-radius: 2rem;
+    height: 25rem;
+    margin-left: 3%;
+    background-color: rgb(158, 224, 250);
+}
+#our_story > div > h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    margin-left: 45%;
+}
+#our_story > div > p:nth-child(2) {
+    margin-left: 11%;
+    font-size: 2rem;
+    width: 77%;
+    text-align: center;
+    font-weight: 500;
+}
+#our_story > div > p:nth-child(3) {
+    margin-left: 1%;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+/*instagram =========================================================*/
 #instagram {
     position: absolute;
     top: 180rem;
