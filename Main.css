@@ -171,6 +171,7 @@ main {
 #bestsellers {
     position: absolute;
     width: 100%;
+    top: 0px;
 }
 #bestsellers > section > h2 {
     display: inline-block;
@@ -239,7 +240,7 @@ main {
     padding: 2.5rem 3%;
     position: absolute;
     width: 94%;
-    top: 35rem;
+    top: 691px;
     z-index: 3;
     color: white;
     background-color: white;
@@ -359,7 +360,7 @@ main {
 /*shop by catagori =================================================*/
 #shop_by_catagory {
     position: absolute;
-    top: 83rem;
+    top: 1442px;
     z-index: 3;
     padding-bottom: 5rem;
     background-color: white;
@@ -437,13 +438,18 @@ main {
 }
 /*our_story =========================================================*/
 #our_story {
+    display: block;
     position: absolute;
     z-index: 3;
-    top: 127rem;
+    height: 26rem;
+    top: 2122px;
     width: 100%;
     background-color: white;
+    padding-bottom: 3rem;
 }
 #our_story > div {
+    position: absolute;
+    z-index: 4;
     color: rgb(0, 56, 73);
     display: inline-block;
     width: 93%;
@@ -453,28 +459,127 @@ main {
     background-color: rgb(158, 224, 250);
 }
 #our_story > div > h2 {
+    position: absolute;
+    z-index: 6;
+    text-transform: capitalize;
     font-size: 2.5rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     font-weight: 600;
     margin-left: 45%;
 }
 #our_story > div > p:nth-child(2) {
+    position: absolute;
+    z-index: 6;
     margin-left: 11%;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 77%;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
+    /* border: 1px solid black; */
+    line-height: 1.5;
+    font-family: "Playfair Display", sans-serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>; */
+    font-style: normal;
+    top: 5rem;
 }
 #our_story > div > p:nth-child(3) {
-    margin-left: 1%;
-    font-size: 2rem;
+    position: absolute;
+    z-index: 6;
+    top: 18rem;
+    left: 40%; 
+    margin-left: 3.3%;
+    margin-top: 1rem;
+    font-size: 0.9em;
     text-align: center;
     font-weight: 500;
+    font-family: "Arimo", sans-serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+#our_story > div > img[alt="shoe_1"] {
+    position: absolute;
+    z-index: 5;
+    transform: rotate(-45deg);
+    left: 9%;
+    top: 498px;
+}
+#our_story > div > img[alt="shoe_2"] {
+    position: absolute;
+    z-index: 5;
+    scale: 0.4;
+    transform: rotate(-45deg);
+    left: 58%;
+    top: 634px;
 }
 /*instagram =========================================================*/
 #instagram {
     position: absolute;
-    top: 180rem;
+    height: 30rem;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+    top: 187rem;
+}
+#instagram > section {
+    position: absolute;
+    left: 34%;
+    display: inline-block;
+    height: fit-content;
+    width: 40%;
+    height: 30%;
+}
+#instagram > section > img {
+    position: absolute;
+    left: 30%;
+    width: 8rem;
+    height: 8rem;
+}
+#instagram > section > h2{
+    position: absolute;
+    top: 9rem;
+    left: 7%;
+    font-size: 2.2rem;
+    color: rgb(44, 44, 44);
+    font-family: "Playfair Display", sans-serif;
+    text-transform: capitalize;
+}
+#instagram > section > p {
+    position: absolute;
+    font-size: 1.9rem;
+    font-family: "Playfair Display", sans-serif;
+    top: 12rem;
+    left: 26%;
+    color: #272727;
+}
+#instagram > div {
+    position: absolute;
+    display: block;
+    height: 25rem;
+    top: 17rem;
+    border: 1px solid black;
+}
+#instagram > div > section:first-child {
+    position: absolute;
+    width: 100%;
+    border: 1px solid black;
+    height: 4rem;
+    display: block;
+}
+#instagram > div > section:nth-child(2) {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    border: 1px solid black;
+    height: 4rem;
+    display: block;
+}
+#instagram > div > section > img {
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
 }
 /*footer ============================================================*/
 footer {
